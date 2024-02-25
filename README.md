@@ -87,16 +87,16 @@ def plot_confusion_matrix(y_true, y_pred, title):
 
 -------------------------------------------------------------
 
-# El mejor modelo que se adapata a los resultados es el modelo de Random Forest con los siguientes resultados:
+# El mejor modelo que se adapata a los resultados es el modelo de regresión logística con los siguientes resultados:
 
 Matriz de confusión:
 
 [[70  1]
 
- [ 3 40]]
+ [ 4 39]]
 
-Como resultado 70 verdaderos positivos, 1 falso negativo, 3 falsos negativos y 40 verdaderos negativos. Con una exactitud de modelo de 0.9649122807017544.
+Como resultado 70 verdaderos positivos, 1 falso negativo, 4 falsos negativos y 39 verdaderos negativos. Con una exactitud de modelo de 0.956140350877193
 
-En comparación con los modelos de regresión logística y SVM dando como resultado 43 falsos negativos
+No opté por el modelo random forest a pesar de tener mayor exactitud 0.9649122807017544; ya que existe una diferencia notable entre la matriz de training y test lo que significa que generaliza mal los datos y existe sobreajuste.
 
 -------------------------------------------------------------
